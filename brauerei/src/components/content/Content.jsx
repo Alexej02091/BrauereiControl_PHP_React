@@ -1,19 +1,26 @@
 import {Button, Card} from 'react-bootstrap'
 
+import {BierListe} from '../../mockdatabase/BierListe'
+
 function Content() {
-    return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-    );
+  if (BierListe.length === 0) {
+    return <div> Kein Bier gefunden</div>
+  } else {
+      return (
+        <>
+          {BierListe.map((bier) =>(
+          <Card key={bier.id} style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Card.Title>{bier.titel}</Card.Title>
+              <Card.Text>{bier.preis}</Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
+          ))}
+        </>
+      );
+    }
 }
 
 export default Content
