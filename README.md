@@ -5,6 +5,10 @@
 ```
 npm create vite braurei -- --template react
 ```
+## Styling
+```
+npm install react-bootstrap bootstrap
+```
 
 # Projekt staten
 ```
