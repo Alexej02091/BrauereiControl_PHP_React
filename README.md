@@ -103,6 +103,11 @@ export const BierListe = [...]
 ### **Node.js Sebastian Springer*** ISBN 978-3-8362-6255-2
 - Kapitel 6 Express ***S. 171***
 - 6.2 Installation ***S. 172***
+- 4.3.1 CommonJS ***S. 118***
+
+
+### **[MySQL Shell API](https://dev.mysql.com/doc/dev/mysqlsh-api-javascript/8.0/)**
+- [getWarningCount()](https://dev.mysql.com/doc/dev/mysqlsh-api-javascript/8.0/classmysqlsh_1_1mysqlx_1_1_base_result.html#a12d272534d7c236b9ca5c7065a8e7bfb)
 
 ### Info von KI
 - Empfehlung: Node.js  zusammen mit MySQL und Express verwenden.
@@ -124,3 +129,37 @@ brauerei/
 ├── package.json
 └── vite.config.js
 ```
+- result.warningCount</br>
+MySQL gibt bei CREATE ... IF NOT EXISTS eine Warnung aus, wenn das Objekt bereits existiert.</br>
+Diese Warnung wird nicht als Fehler geworfen, weil du IF NOT EXISTS benutzt.</br>
+Stattdessen erhöht MySQL einfach:
+```
+result.warningCount = 1
+```
+Wenn warningCount === 0, wurde etwas neu erstellt.</br>
+Wenn warningCount > 0, existierte es bereits.
+```
+con.query(`
+    CREATE TABLE IF NOT EXISTS bier (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(255)
+    )
+`, function (err, result) {
+    if (err) throw err;
+
+    if (result.warningCount === 0) {
+        console.log("Tabelle 'bier' wurde erstellt");
+    } else {
+        console.log("Tabelle 'bier' existiert bereits");
+    }
+});
+
+```
+- CommonJS statt ES-Modules verwenden
+- Syntax korrektur
+```
+const mockDatenbank = require('./db/mock_datenbank.js')
+mockDatenbank(con);
+= function(con) {
+```
+

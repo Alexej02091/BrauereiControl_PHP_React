@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 let mysql = require('mysql');
+const mockDatenbank = require('./db/mock_datenbank.js')
 
 app.get('/', (reg, res) => {
     res.send('My first express application');
@@ -19,4 +20,7 @@ let con = mysql.createConnection({
 con.connect(function(err) {
     if (err) throw err;
     console.log("Connected!");
+
+    mockDatenbank(con);
 });
+
