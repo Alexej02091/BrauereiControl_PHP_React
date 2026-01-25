@@ -111,7 +111,7 @@ export const BierListe = [...]
 - [getWarningCount()](https://dev.mysql.com/doc/dev/mysqlsh-api-javascript/8.0/classmysqlsh_1_1mysqlx_1_1_base_result.html#a12d272534d7c236b9ca5c7065a8e7bfb)
 - [MySQL Variable](https://thehotcode.com/nodejs-mysql-variables-safe-query/)
 - [conn.end](https://learn.microsoft.com/de-de/azure/mysql/flexible-server/connect-nodejs?tabs=windows#connect-create-table-and-insert-data)
-
+- [React Backend SQL Tutorial](https://medium.com/@ardasenbakkavaci/react-backend-sql-tutorial-9f8f8103d75f)
 ### Info von KI
 - **Empfehlung: Node.js  zusammen mit MySQL und Express verwenden.**
 
