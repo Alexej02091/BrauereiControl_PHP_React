@@ -62,7 +62,7 @@ node server.js
 - [JavaScript Objects](https://www.w3schools.com/js/js_objects.asp)
 
 ### Info von KI
-- <>...</> = React Fragment
+- **<>...</> = React Fragment**
 ```
 function Content() {
   if (BierListe.length === 0) {
@@ -84,7 +84,7 @@ Es ist also wie ein <div>, aber ohne dass ein <div> erzeugt wird.
 In React darf ein return immer nur ein einziges JSX‑Element zurückgeben.
 Wenn du mehrere Geschwisterelemente zurückgeben willst, musst du sie um etwas herum gruppieren.
 
-- Warum { BierListe } in Klammern
+- **Warum { BierListe } in Klammern**
 ```
 import { BierListe } from '../../mockdatabase/BierListe'
 ```
@@ -106,13 +106,16 @@ export const BierListe = [...]
 - 4.3.1 CommonJS ***S. 118***
 
 
-### **[MySQL Shell API](https://dev.mysql.com/doc/dev/mysqlsh-api-javascript/8.0/)**
+### MySQL (Node.js)
+- **[MySQL Shell API](https://dev.mysql.com/doc/dev/mysqlsh-api-javascript/8.0/)**
 - [getWarningCount()](https://dev.mysql.com/doc/dev/mysqlsh-api-javascript/8.0/classmysqlsh_1_1mysqlx_1_1_base_result.html#a12d272534d7c236b9ca5c7065a8e7bfb)
+- [MySQL Variable](https://thehotcode.com/nodejs-mysql-variables-safe-query/)
+- [conn.end](https://learn.microsoft.com/de-de/azure/mysql/flexible-server/connect-nodejs?tabs=windows#connect-create-table-and-insert-data)
 
 ### Info von KI
-- Empfehlung: Node.js  zusammen mit MySQL und Express verwenden.
+- **Empfehlung: Node.js  zusammen mit MySQL und Express verwenden.**
 
-- Ordnerstruktur:
+- **Ordnerstruktur:**
 ```
 brauerei/
 │
@@ -129,7 +132,7 @@ brauerei/
 ├── package.json
 └── vite.config.js
 ```
-- result.warningCount</br>
+- **result.warningCount</br>**
 MySQL gibt bei CREATE ... IF NOT EXISTS eine Warnung aus, wenn das Objekt bereits existiert.</br>
 Diese Warnung wird nicht als Fehler geworfen, weil du IF NOT EXISTS benutzt.</br>
 Stattdessen erhöht MySQL einfach:
@@ -155,11 +158,73 @@ con.query(`
 });
 
 ```
-- CommonJS statt ES-Modules verwenden
-- Syntax korrektur
+- **CommonJS statt ES-Modules verwenden**
+</br></br>
+- **Syntax korrektur**
 ```
 const mockDatenbank = require('./db/mock_datenbank.js')
 mockDatenbank(con);
 = function(con) {
 ```
+
+- **Beispiel: Eine Funktion, die etwas Asynchrones macht**
+```
+Stell dir vor, du hast eine Funktion, die eine Datei liest, eine Datenbankabfrage macht oder etwas anderes, das Zeit braucht.
+
+❌ Ohne Callback (funktioniert nicht)
+
+function ladeDaten() {
+    setTimeout(() => {
+        console.log("Daten geladen");
+    }, 1000);
+}
+
+console.log("Start");
+ladeDaten();
+console.log("Ende");
+
+Ausgabe:
+
+Start
+Ende
+Daten geladen
+
+Warum?
+
+setTimeout ist asynchron
+
+JavaScript läuft weiter, ohne zu warten
+
+„Ende“ kommt vor „Daten geladen“
+
+🔹 ✔ Mit Callback (funktioniert richtig)
+
+function ladeDaten(callback) {
+    setTimeout(() => {
+        console.log("Daten geladen");
+        callback();  // <-- wird erst ausgeführt, wenn alles fertig ist
+    }, 1000);
+}
+
+console.log("Start");
+
+ladeDaten(() => {
+    console.log("Jetzt geht es weiter, weil die Daten fertig sind");
+});
+
+console.log("Ende");
+
+Start
+Ende
+Daten geladen
+Jetzt geht es weiter, weil die Daten fertig sind
+
+Warum?
+
+Der Callback wird erst ausgeführt, wenn die asynchrone Aufgabe fertig ist
+
+Du kannst damit kontrollieren, wann der nächste Schritt passiert
+
+```
+
 
