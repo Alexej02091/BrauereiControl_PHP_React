@@ -1,6 +1,7 @@
-import {Button, Card} from 'react-bootstrap'
+import {Button, Card} from 'react-bootstrap';
 
-import {BierListe} from '../../mockdatabase/BierListe'
+import {BierListe} from '../../mockdatabase/BierListe';
+import Bierlager from './Bierlager';
 
 function Content() {
   if (BierListe.length === 0) {
@@ -18,6 +19,7 @@ function Content() {
             </Card.Body>
           </Card>
           ))}
+        < Bierlager />
         </>
       );
     }

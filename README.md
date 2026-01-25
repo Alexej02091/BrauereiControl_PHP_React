@@ -28,6 +28,18 @@ mpn init
 ```
 npm install express
 ```
+- Axios
+```
+npm install axios
+```
+- Cors
+```
+npm install cors
+```
+- Body-parser
+```
+npm install body-parser
+```
 
 # Projekt staten
 ## Frontend
