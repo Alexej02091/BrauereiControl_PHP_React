@@ -8,9 +8,11 @@ const mockDatenbank = require('./db/mock_db/mock_datenbank.js');
 const mockTabVerwaltung = require('./db/mock_db/mock_tab_verwaltung.js');
 const mockTabProduktion = require('./db/mock_db/mock_tab_produktion.js');
 const mockTabVertrieb = require('./db/mock_db/mock_tab_vertrieb.js');
-const mockAbhaengigkeiten = require('./db/mock_db/mock_tab_abhaengigkeit.js')
-const mockDatesaetzeVerwaltung = require('./db/mock_db/mock_daten_verwaltung.js')
 
+const mockAbhaengigkeiten = require('./db/mock_db/mock_tab_abhaengigkeit.js')
+
+const mockDatensaetzeVerwaltung = require('./db/mock_db/mock_daten_verwaltung.js')
+const mockDatensaetzeProduktion = require('./db/mock_db/mock_daten_produktion.js')
 
 
 app.get('/', (reg, res) => {
@@ -46,8 +48,11 @@ conCreatDatebase.connect(function(err) {
             mockTabVerwaltung(conMockTabellen);
             mockTabVertrieb(conMockTabellen);
             mockTabProduktion(conMockTabellen);
+
             mockAbhaengigkeiten(conMockTabellen);
-            mockDatesaetzeVerwaltung(conMockTabellen);
+            
+            mockDatensaetzeVerwaltung(conMockTabellen);
+            mockDatensaetzeProduktion(conMockTabellen);
 
             conMockTabellen.end (function (err) {
                 if (err) throw err;
