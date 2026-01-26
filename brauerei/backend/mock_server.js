@@ -4,6 +4,7 @@ let mysql = require('mysql');
 
 const datenbankName = "brauerei";
 
+const mockDatenbankDrop = require('./db/mock_db/mock_datenbank_drop.js');
 const mockDatenbank = require('./db/mock_db/mock_datenbank.js');
 const mockTabVerwaltung = require('./db/mock_db/mock_tab_verwaltung.js');
 const mockTabProduktion = require('./db/mock_db/mock_tab_produktion.js');
@@ -31,33 +32,40 @@ let conCreatDatebase = mysql.createConnection({
 
 conCreatDatebase.connect(function(err) {
     if (err) throw err;
-    console.log("Connected!");
-    mockDatenbank(conCreatDatebase, datenbankName);
-
-        let conMockTabellen = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password:"admin",
-        database: datenbankName
-        });
+    console.log("Server Conencted!");
+    console.log(`Start Drop ${datenbankName}`);
+    mockDatenbankDrop(conCreatDatebase, datenbankName, function(){
+        
+        console.log("Start Creat Database");  
+        mockDatenbank(conCreatDatebase, datenbankName, function() {
             
-        conMockTabellen.connect(function(err) {
-            if (err) throw err;
-            console.log("Connected!");
+            let conMockTabellen = mysql.createConnection({
+            host: "localhost",
+            user: "root",
+            password:"admin",
+            database: datenbankName
+            });
 
-            mockTabVerwaltung(conMockTabellen);
-            mockTabVertrieb(conMockTabellen);
-            mockTabProduktion(conMockTabellen);
-
-            mockAbhaengigkeiten(conMockTabellen);
-            
-            mockDatensaetzeVerwaltung(conMockTabellen);
-            mockDatensaetzeProduktion(conMockTabellen);
-
-            conMockTabellen.end (function (err) {
+            conMockTabellen.connect(function(err) {
                 if (err) throw err;
-                else  console.log('Connector "conMockTabellen" geschlossen')
+                console.log(`Database ${datenbankName} Connected!`);
+
+                mockTabVerwaltung(conMockTabellen);
+                mockTabVertrieb(conMockTabellen);
+                mockTabProduktion(conMockTabellen);
+
+                mockAbhaengigkeiten(conMockTabellen);
+                
+                mockDatensaetzeVerwaltung(conMockTabellen);
+                mockDatensaetzeProduktion(conMockTabellen);
+
+                conMockTabellen.end (function (err) {
+                    if (err) throw err;
+                    else  console.log('Connector "conMockTabellen" geschlossen')
+                });
             });
         });
-    
+    });           
 });
+
+
