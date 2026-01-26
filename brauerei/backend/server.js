@@ -1,21 +1,20 @@
 const express = require('express');
-const app = express();
 let mysql = require('mysql');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const datenbankName = "brauerei";
 
+const apiBierlager = require('./api/produktion/api_bierlager.js');
+const apiBiersortiment = require('./api/gast/api_biersortiment.js');
+
+const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (reg, res) => {
     res.send('My first express application');
 });
-
-// app.listen(8080, () => {
-//     console.log('Server listing on port 8080');
-// });
 
 let con = mysql.createConnection({
     host: "localhost",
@@ -32,15 +31,8 @@ con.connect((err) => {
   console.log('Connected to MySQL database.');
 });
 
-app.get('/bierlager', (req, res) => {
-  con.query('SELECT * FROM bierlager', (err, results) => {
-    if (err) {
-      res.status(500).send(err);
-    } else {
-      res.json(results);
-    }
-  });
-});
+app.use('/', apiBierlager(con));
+app.use('/', apiBiersortiment(con));
 
 const PORT = 3001;
     app.listen(PORT, () => {

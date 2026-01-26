@@ -16,6 +16,7 @@ const mockAbhaengigkeitenProduktion = require('./db/mock_db/abhaengigkeiten/mock
 
 const mockDatensaetzeVerwaltung = require('./db/mock_db/datensaetze/mock_daten_verwaltung.js');
 const mockDatensaetzeProduktion = require('./db/mock_db/datensaetze/mock_daten_produktion.js');
+const mockDatensaetzeVertrieb = require('./db/mock_db/datensaetze/mock_daten_vertrieb.js')
 
 
 app.get('/', (reg, res) => {
@@ -62,6 +63,7 @@ conCreatDatebase.connect(function(err) {
                 
                 mockDatensaetzeVerwaltung(conMockTabellen);
                 mockDatensaetzeProduktion(conMockTabellen);
+                mockDatensaetzeVertrieb(conMockTabellen);
 
                 conMockTabellen.end (function (err) {
                     if (err) throw err;
