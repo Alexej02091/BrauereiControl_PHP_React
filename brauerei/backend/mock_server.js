@@ -6,14 +6,16 @@ const datenbankName = "brauerei";
 
 const mockDatenbankDrop = require('./db/mock_db/mock_datenbank_drop.js');
 const mockDatenbank = require('./db/mock_db/mock_datenbank.js');
-const mockTabVerwaltung = require('./db/mock_db/mock_tab_verwaltung.js');
-const mockTabProduktion = require('./db/mock_db/mock_tab_produktion.js');
-const mockTabVertrieb = require('./db/mock_db/mock_tab_vertrieb.js');
+const mockTabVerwaltung = require('./db/mock_db/tabellen/mock_tab_verwaltung.js');
+const mockTabProduktion = require('./db/mock_db/tabellen/mock_tab_produktion.js');
+const mockTabVertrieb = require('./db/mock_db/tabellen/mock_tab_vertrieb.js');
 
-const mockAbhaengigkeiten = require('./db/mock_db/mock_tab_abhaengigkeit.js')
+const mockAbhaengigkeitenVertrieb = require('./db/mock_db/abhaengigkeiten/mock_abhaengigkeiten_vertrieb.js');
+const mockAnhaengigkeitenVerwaltung = require('./db/mock_db/abhaengigkeiten/mock_abhaengigkeiten_verwaltung.js');
+const mockAbhaengigkeitenProduktion = require('./db/mock_db/abhaengigkeiten/mock_abhaengigkeiten_produktion.js');
 
-const mockDatensaetzeVerwaltung = require('./db/mock_db/mock_daten_verwaltung.js')
-const mockDatensaetzeProduktion = require('./db/mock_db/mock_daten_produktion.js')
+const mockDatensaetzeVerwaltung = require('./db/mock_db/datensaetze/mock_daten_verwaltung.js');
+const mockDatensaetzeProduktion = require('./db/mock_db/datensaetze/mock_daten_produktion.js');
 
 
 app.get('/', (reg, res) => {
@@ -54,7 +56,9 @@ conCreatDatebase.connect(function(err) {
                 mockTabVertrieb(conMockTabellen);
                 mockTabProduktion(conMockTabellen);
 
-                mockAbhaengigkeiten(conMockTabellen);
+                mockAbhaengigkeitenVertrieb(conMockTabellen);
+                mockAnhaengigkeitenVerwaltung(conMockTabellen);
+                mockAbhaengigkeitenProduktion(conMockTabellen);
                 
                 mockDatensaetzeVerwaltung(conMockTabellen);
                 mockDatensaetzeProduktion(conMockTabellen);

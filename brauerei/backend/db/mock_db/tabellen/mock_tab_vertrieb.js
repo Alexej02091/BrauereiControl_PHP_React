@@ -58,4 +58,52 @@ module.exports = function(con){
              }
         }
     );
+
+    con.query(`
+        CREATE TABLE IF NOT EXISTS preisen (
+            preis_id INT AUTO_INCREMENT PRIMARY KEY,
+            preis_pro_liter FLOAT)
+            `,
+        function (err, result) {
+            if (err) throw err;
+            if (result.warningCount === 0) {
+                console.log("Table 'preisen' created");
+            } else {
+                console.log("Table 'preisen' already exists");
+             }
+        }
+    );
+
+    con.query(`
+        CREATE TABLE IF NOT EXISTS lieferform (
+            lieferform_id INT AUTO_INCREMENT PRIMARY KEY,
+            bezeichnung VARCHAR(255),
+            volumen_liter FLOAT)
+        `,
+        function (err, result) {
+            if (err) throw err;
+            if (result.warningCount === 0) {
+                console.log("Table 'lieferform' created");
+            } else {
+                console.log("Table 'lieferform' already exists");
+             }
+        }
+    );
+
+    con.query(`
+        CREATE TABLE IF NOT EXISTS produktsortiment (
+            produkt_id INT AUTO_INCREMENT PRIMARY KEY,
+            biersorte_id INT,
+            lieferform_id INT,
+            preis_id INT)
+        `,
+        function (err, result) {
+            if (err) throw err;
+            if (result.warningCount === 0) {
+                console.log("Table 'produktsortiment' created");
+            } else {
+                console.log("Table 'produktsortiment' already exists");
+             }
+        }
+    );
 }
