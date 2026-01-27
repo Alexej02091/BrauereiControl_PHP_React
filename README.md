@@ -69,6 +69,8 @@ node server.js
 - 12     Navigation innerhalb einer Applikation - der Router ***S. 415***
 - 12.2   Navigation in der Applikation ***S. 417***
 - 12.2.2 Eine Navigationsleiste für die Applikation ***S. 420***
+- 3.7.1  Auf Events reagieren ***S. 108***
+
 
 ### **[React Bootstrap](https://react-bootstrap.netlify.app/)**
 - [Introduction](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
@@ -112,6 +114,16 @@ Weil du einen benannten Export (named export) importierst.
 In der Datei ../../mockdatabase/BierListe steht sehr wahrscheinlich etwas wie:
 ```
 export const BierListe = [...]
+```
+- Einfachste Lösung: HTML‑Datepicker (kein extra Hook nötig)
+```
+<Form.Control
+    type="date"
+    value={datum}
+    onChange={(e) => setDatum(e.target.value)}
+    style={{ width: '18rem' }}
+/>
+
 ```
 
 ## Backend

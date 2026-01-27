@@ -5,7 +5,12 @@ const bodyParser = require('body-parser');
 
 const datenbankName = "brauerei";
 
+//----API PRODUKTION----
 const apiBierlager = require('./api/produktion/api_bierlager.js');
+const apiBierbrauen = require('./api/produktion/api_bierbrauen.js');
+const apiBiersorten = require('./api/produktion/api_biersorten.js');
+
+//----API GAST----
 const apiBiersortiment = require('./api/gast/api_biersortiment.js');
 
 const app = express();
@@ -31,8 +36,13 @@ con.connect((err) => {
   console.log('Connected to MySQL database.');
 });
 
-app.use('/', apiBierlager(con));
+//----Gast----
 app.use('/', apiBiersortiment(con));
+
+//----Produktion----
+app.use('/', apiBierlager(con));
+app.use('/', apiBierbrauen(con));
+app.use('/', apiBiersorten(con));
 
 const PORT = 3001;
     app.listen(PORT, () => {
