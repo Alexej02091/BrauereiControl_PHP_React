@@ -1,11 +1,10 @@
 module.exports = function(con) {
     con.query(`
-        INSERT IGNORE INTO lieferform (lieferform_id, bezeichnung, volumen_liter)
+        INSERT IGNORE INTO lieferform (lieferform_id, bezeichnung, image, volumen_liter)
         VALUES 
-            (1, 'Keg', 50.0),
-            (2, 'Keg', 30.0),
-            (3, 'Einwegflaschen', 1.0),
-            (4, 'Einwegflaschen', 5.0)
+            (1, 'Keg', './public/vertrieb/pfand/Keg_50_liter.jpg', 50.0),
+            (2, 'Keg', './public/vertrieb/pfand/Keg_30_liter.jpg', 30.0),
+            (3, 'Einwegflaschen', './public/vertrieb/pfand/Flasche_1_liter.jpg', 1.0)
         `,
         function (err) {
             if (err) throw err;

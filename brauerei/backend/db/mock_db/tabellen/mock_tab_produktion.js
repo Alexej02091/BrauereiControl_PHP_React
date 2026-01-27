@@ -3,7 +3,8 @@ module.exports = function(con) {
     con.query(`
         CREATE TABLE IF NOT EXISTS biersorten (
         biersorte_id INT AUTO_INCREMENT PRIMARY KEY,
-        bezeichnung VARCHAR(20))
+        bezeichnung VARCHAR(255),
+        image VARCHAR (255))
         `,
         function (err, result) { 
             if (err) throw err; 

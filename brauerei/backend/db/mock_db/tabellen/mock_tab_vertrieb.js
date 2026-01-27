@@ -78,6 +78,7 @@ module.exports = function(con){
         CREATE TABLE IF NOT EXISTS lieferform (
             lieferform_id INT AUTO_INCREMENT PRIMARY KEY,
             bezeichnung VARCHAR(255),
+            image VARCHAR(255),
             volumen_liter FLOAT)
         `,
         function (err, result) {

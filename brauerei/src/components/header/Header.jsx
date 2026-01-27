@@ -23,15 +23,13 @@ function Header() {
         <Nav.Link href="/home">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Produnk</Nav.Link>
+        <Nav.Link eventKey="link-1">Lager</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Kontakt</Nav.Link>
+        <Nav.Link eventKey="link-2">Neuer Auftrag</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="disabled" disabled>
-          Disabled
-        </Nav.Link>
+        <Nav.Link eventKey="link-3">Aktuele Aufträge</Nav.Link>
       </Nav.Item>
     </Nav>
     </Container>

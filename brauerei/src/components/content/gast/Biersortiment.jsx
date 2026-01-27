@@ -1,4 +1,4 @@
-import {Button, Card} from 'react-bootstrap'
+import {Button, Card, Container, Row} from 'react-bootstrap'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -16,20 +16,24 @@ const Biersortiment = () => {
     }, []);
 
     return (
-    <div>
+    <Container>
       <h1>Biersortiment</h1>
+      <Row classNAme="align-items-center py-2">
         {biersortiment.map(biersortiment => (
            <Card key={biersortiment.id} style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src={biersortiment.biersorte_image} />
+            <Card.Img variant="top" src={biersortiment.pfand_image} />
             <Card.Body>
-                <Card.Title>Biersorte {biersortiment.biersorte_id}</Card.Title>
-                <Card.Text>Größe      {biersortiment.lieferform_id}</Card.Text>
-                <Card.Text>Pries      {biersortiment.preis_id}</Card.Text>
+                <Card.Title>{biersortiment.biersorte}</Card.Title>
+                <Card.Text>Pfand: {biersortiment.pfand}</Card.Text>
+                <Card.Text>Volumen: {biersortiment.volumen} Liter</Card.Text>
+                <Card.Text>Pries: {biersortiment.preis} €</Card.Text>
               <Button variant="primary">Bestellen</Button>
             </Card.Body>
           </Card>
         ))}
-    </div>
+      </Row>
+    </Container>
   );
 };
 

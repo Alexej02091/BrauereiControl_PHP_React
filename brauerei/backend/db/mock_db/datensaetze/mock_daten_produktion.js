@@ -1,10 +1,10 @@
 module.exports = function(con) {
     con.query(`
-        INSERT IGNORE INTO biersorten (biersorte_id, bezeichnung)
+        INSERT IGNORE INTO biersorten (biersorte_id, bezeichnung, image)
         VALUES 
-            (1, 'Jantarnoe'),
-            (2, 'Pivnoff'),
-            (3, 'Chmelnoff')
+            (1, 'Jantarnoe', './public/vertrieb/label/Jantarnoe.png'),
+            (2, 'Pivnoff', './public/vertrieb/label/Pivnoff.png'),
+            (3, 'Chmelnoff', './public/vertrieb/label/Chmelnoff.png')
         `,
         function (err) {
             if (err) throw err;
