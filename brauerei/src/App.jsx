@@ -1,14 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/header/Header';
-import Content from './components/content/Content'
+import Content from './components/content/Content';
 
 function App() {
 
   return (
     <>
-     < Header />
-     < Content />
+      <BrowserRouter>
+        < Header />
+        < Content />
+      </BrowserRouter>
     </>
   )
 }

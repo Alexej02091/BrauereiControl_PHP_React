@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import {Nav, Container, Row, Col, Button} from 'react-bootstrap';
 
 function Header() {
@@ -13,23 +15,18 @@ function Header() {
             </Col>
           </Row>
         
-
-     
-     <Nav
-      activeKey="/home"
-      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-      >
+     <Nav>
       <Nav.Item>
-        <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link href="/biersortiment">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Lager</Nav.Link>
+        <Nav.Link href="link-1">Lager</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Neuer Auftrag</Nav.Link>
+        <Nav.Link href="/neuerauftrag">Neuer Auftrag</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-3">Aktuele Aufträge</Nav.Link>
+        <Nav.Link href="link-3">Aktuele Aufträge</Nav.Link>
       </Nav.Item>
     </Nav>
     </Container>
