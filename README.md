@@ -5,6 +5,10 @@
 ```
 npm create vite braurei -- --template react
 ```
+```
+npm install --save-dev vite
+```
+
 ## Styling
 ```
 npm install react-bootstrap bootstrap
