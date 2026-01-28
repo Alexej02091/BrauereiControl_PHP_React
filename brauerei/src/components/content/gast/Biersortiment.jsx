@@ -15,7 +15,7 @@ const Biersortiment = () => {
         });
     }, []);
 
-    return (
+    return ( 
     <Container>
       <h1>Biersortiment</h1>
       <Row classNAme="align-items-center py-2">

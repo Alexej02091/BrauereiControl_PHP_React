@@ -44,6 +44,10 @@ npm install cors
 ```
 npm install body-parser
 ```
+- React Router
+```
+npm install react-router-dom@latest
+```
 
 # Projekt staten
 ## Frontend
@@ -59,13 +63,18 @@ node server.js
 # Quellen
 ## Frontend
 ### **React Sebastian Springer** ISBN 978-3-8362-9254-2
-- 2.4.3 Projekt initialisieren ***S. 63***
-- 3.3.1 Eine Komponente pro Datei ***S. 83***
-- 3.4.1 Ausdrücke in JSX ***S. 90***
-- 3.5   Props - Informationsfluss in einer Applikation ***S. 99***
-- 3.4.2 Interationen - Schleifen in Komponenten ***S. 93***
-- 3.4.3 Bedingungen in JSX ***S. 93***
-- 3.5.1 Props und Kindkomponente ***S. 100***
+- 2.4.3  Projekt initialisieren ***S. 63***
+- 3.3.1  Eine Komponente pro Datei ***S. 83***
+- 3.4.1  Ausdrücke in JSX ***S. 90***
+- 3.5    Props - Informationsfluss in einer Applikation ***S. 99***
+- 3.4.2  Interationen - Schleifen in Komponenten ***S. 93***
+- 3.4.3  Bedingungen in JSX ***S. 93***
+- 3.5.1  Props und Kindkomponente ***S. 100***
+- 12     Navigation innerhalb einer Applikation - der Router ***S. 415***
+- 12.2   Navigation in der Applikation ***S. 417***
+- 12.2.2 Eine Navigationsleiste für die Applikation ***S. 420***
+- 3.7.1  Auf Events reagieren ***S. 108***
+
 
 ### **[React Bootstrap](https://react-bootstrap.netlify.app/)**
 - [Introduction](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
@@ -76,6 +85,15 @@ node server.js
 **[JavaScript](https://www.w3schools.com/js/default.asp)**
 - [JavaScript Modules Export](https://www.w3schools.com/js/js_modules_export.asp)
 - [JavaScript Objects](https://www.w3schools.com/js/js_objects.asp)
+
+### **[React.dev](https://react.dev/)**
+- [input](https://react.dev/reference/react-dom/components/input)
+
+### **[legacy.reacts.org](https://legacy.reactjs.org/)**
+- [Handling Events](https://legacy.reactjs.org/docs/handling-events.html)
+
+### **Sonstige**
+- [Using Axios POST](https://blog.logrocket.com/axios-post-requests/)
 
 ### Info von KI
 - **<>...</> = React Fragment**
@@ -110,6 +128,28 @@ In der Datei ../../mockdatabase/BierListe steht sehr wahrscheinlich etwas wie:
 ```
 export const BierListe = [...]
 ```
+- Einfachste Lösung: HTML‑Datepicker (kein extra Hook nötig)
+```
+<Form.Control
+    type="date"
+    value={datum}
+    onChange={(e) => setDatum(e.target.value)}
+    style={{ width: '18rem' }}
+/>
+
+```
+- Datum Formatierung direkt im JSX
+```
+<Card.Text>Braudatum     {new Date(bierlager.braudatum).toLocaleDateString("de-DE")}</Card.Text>
+```
+- Datum nur formatieren, wenn es existiert
+```
+<Card.Text> 
+    Braudatum {bierlager.braudatum 
+        ? new Date(bierlager.braudatum).toLocaleDateString("de-DE") 
+        : "—"} 
+</Card.Text>
+```
 
 ## Backend
 ### **Node.js**
@@ -129,6 +169,7 @@ export const BierListe = [...]
 - [MySQL Variable](https://thehotcode.com/nodejs-mysql-variables-safe-query/)
 - [conn.end](https://learn.microsoft.com/de-de/azure/mysql/flexible-server/connect-nodejs?tabs=windows#connect-create-table-and-insert-data)
 - [React Backend SQL Tutorial](https://medium.com/@ardasenbakkavaci/react-backend-sql-tutorial-9f8f8103d75f)
+- [How to Use Prepared Statements in MySQL with Node.js](https://www.geeksforgeeks.org/node-js/how-to-use-prepared-statements-in-mysql-with-nodejs/)
 ### Info von KI
 - **Empfehlung: Node.js  zusammen mit MySQL und Express verwenden.**
 
