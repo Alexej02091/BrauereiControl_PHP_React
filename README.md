@@ -134,6 +134,18 @@ export const BierListe = [...]
 />
 
 ```
+- Datum Formatierung direkt im JSX
+```
+<Card.Text>Braudatum     {new Date(bierlager.braudatum).toLocaleDateString("de-DE")}</Card.Text>
+```
+- Datum nur formatieren, wenn es existiert
+```
+<Card.Text> 
+    Braudatum {bierlager.braudatum 
+        ? new Date(bierlager.braudatum).toLocaleDateString("de-DE") 
+        : "—"} 
+</Card.Text>
+```
 
 ## Backend
 ### **Node.js**

@@ -20,7 +20,7 @@ function Header() {
         <Nav.Link href="/biersortiment">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="link-1">Lager</Nav.Link>
+        <Nav.Link href="/bierlager">Lager</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/neuerauftrag">Neuer Auftrag</Nav.Link>
