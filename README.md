@@ -85,6 +85,12 @@ node server.js
 ### **[React.dev](https://react.dev/)**
 - [input](https://react.dev/reference/react-dom/components/input)
 
+### **[legacy.reacts.org](https://legacy.reactjs.org/)**
+- [Handling Events](https://legacy.reactjs.org/docs/handling-events.html)
+
+### **Sonstige**
+- [Using Axios POST](https://blog.logrocket.com/axios-post-requests/)
+
 ### Info von KI
 - **<>...</> = React Fragment**
 ```
@@ -147,6 +153,7 @@ export const BierListe = [...]
 - [MySQL Variable](https://thehotcode.com/nodejs-mysql-variables-safe-query/)
 - [conn.end](https://learn.microsoft.com/de-de/azure/mysql/flexible-server/connect-nodejs?tabs=windows#connect-create-table-and-insert-data)
 - [React Backend SQL Tutorial](https://medium.com/@ardasenbakkavaci/react-backend-sql-tutorial-9f8f8103d75f)
+- [How to Use Prepared Statements in MySQL with Node.js](https://www.geeksforgeeks.org/node-js/how-to-use-prepared-statements-in-mysql-with-nodejs/)
 ### Info von KI
 - **Empfehlung: Node.js  zusammen mit MySQL und Express verwenden.**
 
