@@ -6,14 +6,16 @@ const bodyParser = require('body-parser');
 const datenbankName = "brauerei";
 
 //----API PRODUKTION----
-//-------GET-----
+//-------GET-------
 const apiBierlager = require('./api/produktion/api_bierlager.js');
 const apiLeerHauptgaertank = require('./api/produktion/api_leer_hauptgaertank.js');
 const apiBiersorten = require('./api/produktion/api_biersorten.js');
-//------POST-----
+const apiBrauenPlan = require('./api/produktion/api_aktuelle_auftraege.js');
+//------POST-------
 const apiAuftragGeben = require('./api/produktion/api_auftrag_geben.js');
 
 //----API GAST----
+//-------GET-------
 const apiBiersortiment = require('./api/gast/api_biersortiment.js');
 
 const app = express();
@@ -47,6 +49,7 @@ app.use('/', apiBiersortiment(con));
 app.use('/', apiBierlager(con));
 app.use('/', apiLeerHauptgaertank(con));
 app.use('/', apiBiersorten(con));
+app.use('/', apiBrauenPlan(con));
 //------POST------
 app.use('/',apiAuftragGeben(con));
 

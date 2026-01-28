@@ -26,7 +26,7 @@ function Header() {
         <Nav.Link href="/neuerauftrag">Neuer Auftrag</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="link-3">Aktuele Aufträge</Nav.Link>
+        <Nav.Link href="brauenplan">Aktuele Aufträge</Nav.Link>
       </Nav.Item>
     </Nav>
     </Container>

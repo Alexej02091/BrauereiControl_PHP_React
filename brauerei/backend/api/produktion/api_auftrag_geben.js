@@ -12,7 +12,7 @@ module.exports = function(con) {
         console.log(`datum = ${datum}`);
 
         const sql = `INSERT INTO brauen_plan (sorte, tank_id, menge, brauer_id, helfer_id, datum)
-            VALUES (?,?, 7000, 1, 1, ?)`
+            VALUES (?,?, 7000, 3, 4, ?)`
         con.query(sql, [sorte, tank_id, datum], (err, results) => {
             if (err) {
                 console.error(err);

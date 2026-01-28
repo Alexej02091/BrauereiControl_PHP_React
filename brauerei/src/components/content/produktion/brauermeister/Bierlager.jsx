@@ -21,7 +21,7 @@ const Bierlager = () => {
         <h1>Bierlager</h1>
           <Row className="align-items-center py-2" xs={1} sm={2} md={3} lg={4}>
             {bierlager.map(bierlager => (
-               <Col key={bierlager.id} className="mb-2 ">
+               <Col key={bierlager.id} className="mb-4">
                 <Card key={bierlager.id} 
                   style={{ 
                     width: '16rem', 
