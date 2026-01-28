@@ -82,6 +82,9 @@ node server.js
 - [JavaScript Modules Export](https://www.w3schools.com/js/js_modules_export.asp)
 - [JavaScript Objects](https://www.w3schools.com/js/js_objects.asp)
 
+### **[React.dev](https://react.dev/)**
+- [input](https://react.dev/reference/react-dom/components/input)
+
 ### Info von KI
 - **<>...</> = React Fragment**
 ```
