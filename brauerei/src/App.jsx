@@ -10,11 +10,11 @@ function App() {
   return (
     <>
 
-    {/* <LoginForm /> */}
-      <BrowserRouter>
-        < Header />
-        < Content />
-      </BrowserRouter>
+    <LoginForm />
+      {/* <BrowserRouter> */}
+        {/* < Header /> */}
+        {/* < Content /> */}
+      {/* </BrowserRouter> */}
     </>
   )
 }

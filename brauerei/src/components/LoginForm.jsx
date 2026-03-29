@@ -1,50 +1,75 @@
 import { useState } from "react";
+import { Form, Button, Card, Container, Row, Col, Alert } from "react-bootstrap";
+import axios from "axios";
 
 export default function LoginForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [msg, setMsg] = useState("");
+  const [error, setError] = useState("");
 
-  const handleLogin = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost/backend/public/login.php", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, password })
-    });
+    try {
+      const formData = new FormData();
+      formData.append("username", username);
+      formData.append("password", password);
 
-    const data = await response.json();
-    setMsg(data.message);
+      const response = await axios.post("/index.php?route=login", formData);
 
-    if (data.success) {
-      console.log("User:", data.user);
+      if (response.data.includes("erfolgreich")) {
+        alert("Login erfolgreich!");
+        // Beispiel: Weiterleitung
+        // window.location.href = "/dashboard";
+      } else {
+        setError("Benutzername oder Passwort falsch");
+      }
+    } catch (err) {
+      setError("Serverfehler – bitte später erneut versuchen");
     }
   };
 
   return (
-    <div>
-      <h2>Login</h2>
+    <Container className="mt-5">
+      <Row className="justify-content-center">
+        <Col md={4}>
+          <Card>
+            <Card.Body>
+              <h3 className="text-center mb-4">Anmelden</h3>
 
-      <form onSubmit={handleLogin}>
-        <input
-          type="text"
-          placeholder="Benutzername"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+              {error && <Alert variant="danger">{error}</Alert>}
 
-        <input
-          type="password"
-          placeholder="Passwort"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3">
+                  <Form.Label>Benutzername</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Benutzername eingeben"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    required
+                  />
+                </Form.Group>
 
-        <button type="submit">Anmelden</button>
-      </form>
+                <Form.Group className="mb-3">
+                  <Form.Label>Passwort</Form.Label>
+                  <Form.Control
+                    type="password"
+                    placeholder="Passwort eingeben"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </Form.Group>
 
-      <p>{msg}</p>
-    </div>
+                <Button variant="primary" type="submit" className="w-100">
+                  Login
+                </Button>
+              </Form>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 }
