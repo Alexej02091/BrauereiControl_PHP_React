@@ -1,0 +1,10 @@
+{
+    "name": "alexej/brauereicontrol",
+    "description":"Mein Abschlussprojekt",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/"
+        }
+    },
+    "require": {}
+}
