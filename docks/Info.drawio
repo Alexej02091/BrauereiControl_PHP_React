@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6" pages="15">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6" pages="16">
   <diagram name="Anwendungsfalldiagramm" id="oaFm_sD7kfgbbe4U0Z_7">
     <mxGraphModel dx="1426" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -4120,7 +4120,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="XOdgEGcG8g2w4N5kQN7J" name="Backend_Login">
-    <mxGraphModel dx="6640" dy="2158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7339" dy="2571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4399,7 +4399,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8DqQCMdmOc6HaifYVGUy-54" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" value="" vertex="1">
-          <mxGeometry height="450" width="1340" x="-3290" y="1520" as="geometry" />
+          <mxGeometry height="510" width="1340" x="-3290" y="1520" as="geometry" />
         </mxCell>
         <mxCell id="8DqQCMdmOc6HaifYVGUy-55" parent="8DqQCMdmOc6HaifYVGUy-54" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
           <mxGeometry height="30" width="1340" as="geometry" />
@@ -4570,6 +4570,19 @@
             <mxRectangle height="60" width="1108" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-1" parent="8DqQCMdmOc6HaifYVGUy-54" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="60" width="1340" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-2" parent="Q1ltPOHhgtS9M_QvGfYG-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" value="isset()" vertex="1">
+          <mxGeometry height="60" width="232" as="geometry">
+            <mxRectangle height="60" width="232" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-3" parent="Q1ltPOHhgtS9M_QvGfYG-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" value="&amp;nbsp;ist eine eingebaute PHP‑Funktion, die prüft, &lt;strong&gt;ob eine Variable existiert UND nicht &lt;/strong&gt;&lt;code&gt;null&lt;/code&gt;&lt;strong&gt; ist&lt;/strong&gt;.Sie ist extrem wichtig, wenn du mit Formularen, Sessions oder GET/POST‑Daten arbeitest.&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="1108" x="232" as="geometry">
+            <mxRectangle height="60" width="1108" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="8DqQCMdmOc6HaifYVGUy-118" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" value="" vertex="1">
           <mxGeometry height="270" width="290" x="-1920" y="1520" as="geometry" />
         </mxCell>
@@ -4703,229 +4716,256 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="G2kLHvCNg6Lt_hkFZGQH-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=240;height=30;" value="login Logik" vertex="1">
-          <mxGeometry height="1670" width="3210" x="-2688.75" y="2070" as="geometry" />
+          <mxGeometry height="1670" width="3210" x="-2470" y="2130" as="geometry" />
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Index.php sendet Name und Password an Login.php" vertex="1">
-          <mxGeometry height="60" width="120" x="-1530" y="2165" as="geometry" />
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-5" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="1070" width="1230" x="-1421.25" y="2190" as="geometry" />
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Login.php erhält&amp;nbsp; Name und Passwort und speichert in Variablen" vertex="1">
-          <mxGeometry height="70" width="200" x="-1185" y="2160" as="geometry" />
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-2" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Index.php sendet Name und Password an Login.php" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="5" as="geometry" />
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-5" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-4" value="">
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-4" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Login.php erhält&amp;nbsp; Name und Passwort und speichert in Variablen" vertex="1">
+          <mxGeometry height="70" width="200" x="435" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-6" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Index.php erhält Name und Rolle von Login.php&lt;div&gt;und lädt dementsprechende Interface&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="120" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-8" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=5;" value="Index.php&lt;div&gt;Form action=&quot;backend_php/login.php&quot; method=&quot;post&quot;&lt;/div&gt;&lt;div&gt;Input type=&quot;text&quot; name=&quot;name&quot;&lt;/div&gt;&lt;div&gt;Input type=&quot;text&quot; name=&quot;password&quot;&lt;/div&gt;&lt;div&gt;button type=&quot;submit&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="300" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-11" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;] ?? &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$password&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;password&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;] ?? &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="290" x="670" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-16" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="lädt PHP Script für DatenbankVerarbeitung&amp;nbsp;" vertex="1">
+          <mxGeometry height="32" width="200" x="435" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-20" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;include_once&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;db_zugriff.php&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22" width="250" x="670" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-22" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="erzeugt neue Objekt für Datenbankverbindung" vertex="1">
+          <mxGeometry height="30" width="200" x="435" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-24" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;$db = &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;dbzugriff&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22" width="180" x="670" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-26" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Objekt erstellt eine Datenbankverbindung" vertex="1">
+          <mxGeometry height="30" width="200" x="435" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-28" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$db&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;connect&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22" width="180" x="670" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-33" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Suche in Tabelle users Name = $name" vertex="1">
+          <mxGeometry height="30" width="195" x="435" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-1" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$sql&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;SELECT&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;FROM&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; users &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;WHERE&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22" width="370" x="670" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-3" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Führe die SQL abfrage durch" vertex="1">
+          <mxGeometry height="30" width="195" x="435" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-4" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(201, 209, 217);&quot;&gt;$db&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(212, 212, 212);&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(210, 168, 255);&quot;&gt;query&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(212, 212, 212);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(201, 209, 217);&quot;&gt;$sql&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(212, 212, 212);&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22" width="140" x="670" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-7" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Name nicht gefunden" vertex="1">
+          <mxGeometry height="30" width="138" x="210" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-8" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Antwort an Index.php" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-9" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Name hat gepasst aber Password nicht" vertex="1">
+          <mxGeometry height="30" width="135" x="210" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-13" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Alles passt überein" vertex="1">
+          <mxGeometry height="30" width="135" x="467.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-20" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Sende Name und Rolle an Index.php" vertex="1">
+          <mxGeometry height="40" width="132.5" x="470" y="683" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-23" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Name gefunden wurde, suche in Tabelle gleiche name und password" vertex="1">
+          <mxGeometry height="40" width="195" x="435" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-25" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$sql&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;SELECT&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;FROM&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; users &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;WHERE&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name and password = $password&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22" width="560" x="670" y="359" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-27" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Führe die SQL abfrage durch" vertex="1">
+          <mxGeometry height="30" width="195" x="435" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-30" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Index.php erhät Rolle lädt er eine Tabelle" vertex="1">
+          <mxGeometry height="60" width="120" x="476.25" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-32" parent="Q1ltPOHhgtS9M_QvGfYG-5" style="rounded=0;whiteSpace=wrap;html=1;" value="Antwort an Index.php" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-5" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-4" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1160" y="2320" as="sourcePoint" />
-            <mxPoint x="-1110" y="2270" as="targetPoint" />
+            <mxPoint x="460" y="160" as="sourcePoint" />
+            <mxPoint x="510" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Index.php erhält Name und Rolle von Login.php&lt;div&gt;und lädt dementsprechende Interface&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="160" x="-1500" y="3150" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-7" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-20" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-30" value="">
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-18" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-2" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-8" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1520" y="2705" as="sourcePoint" />
-            <mxPoint x="-1110" y="2360" as="targetPoint" />
+            <mxPoint x="710" y="250" as="sourcePoint" />
+            <mxPoint x="760" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=5;" value="Index.php&lt;div&gt;Form action=&quot;backend_php/login.php&quot; method=&quot;post&quot;&lt;/div&gt;&lt;div&gt;Input type=&quot;text&quot; name=&quot;name&quot;&lt;/div&gt;&lt;div&gt;Input type=&quot;text&quot; name=&quot;password&quot;&lt;/div&gt;&lt;div&gt;button type=&quot;submit&quot;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="90" width="300" x="-1620" y="2263" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;] ?? &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$password&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;password&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;] ?? &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="290" x="-950" y="2175" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="lädt PHP Script für DatenbankVerarbeitung&amp;nbsp;" vertex="1">
-          <mxGeometry height="32" width="200" x="-1185" y="2258" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-18" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-2" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-8" value="">
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-19" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-11" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-4" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-910" y="2410" as="sourcePoint" />
-            <mxPoint x="-860" y="2360" as="targetPoint" />
+            <mxPoint x="550" y="40" as="sourcePoint" />
+            <mxPoint x="550" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-19" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-11" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-4" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-19" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-16" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1070" y="2200" as="sourcePoint" />
-            <mxPoint x="-1070" y="2240" as="targetPoint" />
+            <mxPoint x="640" y="250" as="sourcePoint" />
+            <mxPoint x="690" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;include_once&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;db_zugriff.php&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="22" width="250" x="-950" y="2263" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-21" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-20" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-16" value="">
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-21" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-20" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-16" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-960" y="2350" as="sourcePoint" />
-            <mxPoint x="-960" y="2390" as="targetPoint" />
+            <mxPoint x="660" y="190" as="sourcePoint" />
+            <mxPoint x="660" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-6" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="m1Cb6YUaPQteQrWz1QSc-3" value="">
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-23" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-16" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="230" as="sourcePoint" />
+            <mxPoint x="410" y="258" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-25" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-22" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="270" as="sourcePoint" />
+            <mxPoint x="630" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-27" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-22" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-26" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="260" as="sourcePoint" />
+            <mxPoint x="370" y="288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-29" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-26" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="670" y="360" as="sourcePoint" />
+            <mxPoint x="670" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-31" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-26" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-33" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="230" as="sourcePoint" />
+            <mxPoint x="537.5" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-2" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-33" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="290" as="sourcePoint" />
+            <mxPoint x="695" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-6" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="G2kLHvCNg6Lt_hkFZGQH-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="m1Cb6YUaPQteQrWz1QSc-3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="erzeugt neue Objekt für Datenbankverbindung" vertex="1">
-          <mxGeometry height="30" width="200" x="-1185" y="2304" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-23" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-16" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-22" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-5" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-3" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-4" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1210" y="2390" as="sourcePoint" />
-            <mxPoint x="-1210" y="2418" as="targetPoint" />
+            <mxPoint x="650" y="340" as="sourcePoint" />
+            <mxPoint x="685" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;$db = &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;new&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;dbzugriff&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="22" width="180" x="-950" y="2308" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-25" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-22" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-24" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-10" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-3" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-7" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-990" y="2430" as="sourcePoint" />
-            <mxPoint x="-990" y="2470" as="targetPoint" />
+            <mxPoint x="350" y="310" as="sourcePoint" />
+            <mxPoint x="350" y="338" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Objekt erstellt eine Datenbankverbindung" vertex="1">
-          <mxGeometry height="30" width="200" x="-1185" y="2350" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-27" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-22" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-26" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-11" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-7" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-8" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1250" y="2420" as="sourcePoint" />
-            <mxPoint x="-1250" y="2448" as="targetPoint" />
+            <mxPoint x="260" y="300" as="sourcePoint" />
+            <mxPoint x="260" y="328" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$db&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;connect&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="22" width="180" x="-950" y="2354" as="geometry" />
-        </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-29" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-26" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-28" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-22" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-13" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-20" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-950" y="2520" as="sourcePoint" />
-            <mxPoint x="-950" y="2560" as="targetPoint" />
+            <mxPoint x="640" y="420" as="sourcePoint" />
+            <mxPoint x="690" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-31" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-26" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-33" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-24" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-23" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1250" y="2390" as="sourcePoint" />
-            <mxPoint x="-1082.5" y="2400" as="targetPoint" />
+            <mxPoint x="630" y="440" as="sourcePoint" />
+            <mxPoint x="680" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Suche in Tabelle users Name = $name" vertex="1">
-          <mxGeometry height="30" width="195" x="-1185" y="2396" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$sql&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;SELECT&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;FROM&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; users &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;WHERE&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="22" width="370" x="-950" y="2400" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-2" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-33" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-1" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-26" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-23" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-25" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-960" y="2450" as="sourcePoint" />
-            <mxPoint x="-925" y="2450" as="targetPoint" />
+            <mxPoint x="670" y="420" as="sourcePoint" />
+            <mxPoint x="710" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Führe die SQL abfrage durch" vertex="1">
-          <mxGeometry height="30" width="195" x="-1185" y="2450" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(201, 209, 217);&quot;&gt;$db&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(212, 212, 212);&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(210, 168, 255);&quot;&gt;query&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(212, 212, 212);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(201, 209, 217);&quot;&gt;$sql&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: rgb(18, 19, 20); color: rgb(212, 212, 212);&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="22" width="140" x="-950" y="2454" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-5" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-3" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-4" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-12" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-27" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-9" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-970" y="2500" as="sourcePoint" />
-            <mxPoint x="-935" y="2500" as="targetPoint" />
+            <mxPoint x="460" y="350" as="sourcePoint" />
+            <mxPoint x="460" y="378" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Name nicht gefunden" vertex="1">
-          <mxGeometry height="30" width="138" x="-1410" y="2450" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Antwort an Index.php" vertex="1">
-          <mxGeometry height="60" width="120" x="-1610" y="2435" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Name hat gepasst aber Password nicht" vertex="1">
-          <mxGeometry height="30" width="135" x="-1410" y="2570" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-10" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-3" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-7" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-14" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-27" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-13" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1270" y="2470" as="sourcePoint" />
-            <mxPoint x="-1270" y="2498" as="targetPoint" />
+            <mxPoint x="596" y="340" as="sourcePoint" />
+            <mxPoint x="580" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-11" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-7" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-8" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-28" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-23" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="m1Cb6YUaPQteQrWz1QSc-27" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1360" y="2460" as="sourcePoint" />
-            <mxPoint x="-1360" y="2488" as="targetPoint" />
+            <mxPoint x="620" y="390" as="sourcePoint" />
+            <mxPoint x="670" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-12" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-27" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-9" value="">
+        <mxCell id="G2kLHvCNg6Lt_hkFZGQH-7" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-20" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-30" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1160" y="2510" as="sourcePoint" />
-            <mxPoint x="-1160" y="2538" as="targetPoint" />
+            <mxPoint x="100" y="545" as="sourcePoint" />
+            <mxPoint x="510" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alles passt überein" vertex="1">
-          <mxGeometry height="30" width="135" x="-1152.5" y="2750" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-14" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-27" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-13" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-31" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-30" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-6" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1024" y="2500" as="sourcePoint" />
-            <mxPoint x="-1040" y="2520" as="targetPoint" />
+            <mxPoint x="456" y="900" as="sourcePoint" />
+            <mxPoint x="280" y="977" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-19" edge="1" parent="1" source="G2kLHvCNg6Lt_hkFZGQH-4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-16" value="">
+        <mxCell id="m1Cb6YUaPQteQrWz1QSc-29" edge="1" parent="Q1ltPOHhgtS9M_QvGfYG-5" source="m1Cb6YUaPQteQrWz1QSc-9" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="m1Cb6YUaPQteQrWz1QSc-32" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-980" y="2410" as="sourcePoint" />
-            <mxPoint x="-930" y="2360" as="targetPoint" />
+            <mxPoint x="210" y="395" as="sourcePoint" />
+            <mxPoint x="130" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Sende Name und Rolle an Index.php" vertex="1">
-          <mxGeometry height="40" width="132.5" x="-1150" y="2843" as="geometry" />
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="1. Passwort beim Registrieren hashen&lt;div&gt;&lt;div&gt;$hash = password_hash($password, PASSWORD_DEFAULT);&lt;/div&gt;&lt;/div&gt;&lt;div&gt;In die Datenbank speichern:&lt;/div&gt;&lt;div&gt;&lt;div&gt;INSERT INTO users (name, password) VALUES (?, ?)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="340" y="2190" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-22" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-13" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-20" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-980" y="2580" as="sourcePoint" />
-            <mxPoint x="-930" y="2530" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="2. Beim Login: Passwort NICHT hashen&lt;div&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Stattdessen:&lt;/span&gt;&lt;/p&gt;&lt;ol start=&quot;1&quot;&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Benutzer anhand des Namens laden&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Passwort mit &lt;code&gt;password_verify()&lt;/code&gt; prüfen&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="340" y="2330" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Name gefunden wurde, suche in Tabelle gleiche name und password" vertex="1">
-          <mxGeometry height="40" width="195" x="-1185" y="2510" as="geometry" />
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" value="✔️ &lt;strong&gt;KORREKTER LOGIN‑CODE&lt;/strong&gt;&lt;div&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;session_start();&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;include_once &#39;backend_php/db_zugriff.php&#39;;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;class Login {&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; public function userTabellecheck($name, $password){&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $db = new dbzugriff();&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $db-&amp;gt;connect();&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // Benutzer anhand des Namens laden&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $sql = &quot;SELECT ID, password FROM users WHERE name = &#39;$name&#39; LIMIT 1&quot;;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $user = $db-&amp;gt;query($sql);&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // Wenn kein Benutzer gefunden wurde&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (empty($user)) {&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return false;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // Passwort aus DB holen&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $hash = $user[&quot;password&quot;];&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // Passwort prüfen&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (password_verify($password, $hash)) {&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $_SESSION[&quot;name&quot;] = $name;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; $_SESSION[&quot;user_id&quot;] = $user[&quot;ID&quot;];&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; header(&quot;Location: backend_php/user.php&quot;);&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return false;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; }&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;}&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="525" width="520" x="-170" y="2455" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-24" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-23" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-990" y="2600" as="sourcePoint" />
-            <mxPoint x="-940" y="2550" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="740" width="340" x="-630" y="2960" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$sql&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;SELECT&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;FROM&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; users &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;WHERE&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name and password = $password&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="22" width="560" x="-950" y="2519" as="geometry" />
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;h1&gt;🎯 &lt;strong&gt;Was jetzt funktioniert&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Passwort wird korrekt geprüft&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Session wird korrekt gesetzt&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Kein doppeltes Hashing&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;Login funktioniert zuverlässig&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="180" width="520" x="-170" y="3020" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-26" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-23" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="m1Cb6YUaPQteQrWz1QSc-25" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-950" y="2580" as="sourcePoint" />
-            <mxPoint x="-910" y="2580" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="100" width="340" x="-170" y="3250" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Führe die SQL abfrage durch" vertex="1">
-          <mxGeometry height="30" width="195" x="-1185" y="2570" as="geometry" />
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="100" width="340" x="380" y="3120" as="geometry" />
         </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-28" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-23" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="m1Cb6YUaPQteQrWz1QSc-27" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1000" y="2550" as="sourcePoint" />
-            <mxPoint x="-950" y="2500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-29" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-9" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="m1Cb6YUaPQteQrWz1QSc-32" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1410" y="2555" as="sourcePoint" />
-            <mxPoint x="-1490" y="2550" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Wenn Index.php erhät Rolle lädt er eine Tabelle" vertex="1">
-          <mxGeometry height="60" width="120" x="-1143.75" y="2960" as="geometry" />
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-31" edge="1" parent="1" source="m1Cb6YUaPQteQrWz1QSc-30" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="G2kLHvCNg6Lt_hkFZGQH-6" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1164" y="3060" as="sourcePoint" />
-            <mxPoint x="-1340" y="3137" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="m1Cb6YUaPQteQrWz1QSc-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Antwort an Index.php" vertex="1">
-          <mxGeometry height="60" width="120" x="-1610" y="2555" as="geometry" />
+        <mxCell id="Q1ltPOHhgtS9M_QvGfYG-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="100" width="340" x="390" y="3270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="wlKpLj6eMJeAnlxH8tou" name="PHP_POST">
-    <mxGraphModel dx="2253" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2505" dy="989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4943,6 +4983,41 @@
         </mxCell>
         <mxCell id="E2xIJ9cohjyZ7FZBkEuk-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;echo&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&amp;lt;pre&amp;gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;print_r&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;echo&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&amp;lt;/pre&amp;gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;] ?? &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$password&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; = &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$_POST&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;password&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;] ?? &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot; bearbeitet&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$password&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;.=&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot; bearbeitet&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;header&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;Location: ../index.php?name=&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$name&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&amp;amp;pass=&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;$password&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;exit&lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="260" width="465" x="-667.5" y="740" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wDBMhIV7e-AYNzkLdaYZ" name="PHP_Adminseite">
+    <mxGraphModel dx="3012" dy="1970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="1140" width="804" x="-1642" y="-1160" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;class ZimmerVerwalten {}&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="-1320" y="-780" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;classe Admin {&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public funktion admin() {}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="-1620" y="-1070" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;class UserVerwalten {&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;function _constructor() {&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $db&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $sql&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $connection&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public function getUsers() {}&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public function setUsers() {}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public function zeigeAlleUsers() {}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public function legeNeueUserAn() {}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public function loescheNeueUser() {}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;public function bearbeiteUser() {}&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="283.5" x="-1621.75" y="-950" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;class RaemeuVerwalten {&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;div&gt;function _constructor() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $db&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $sql&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $connection&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;public function getRaeume() {}&lt;/div&gt;&lt;div&gt;public function setRaeume() {}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;public function zeigeAlleRaeum() {}&lt;/div&gt;&lt;div&gt;public function legeneueRaumAn() {}&lt;/div&gt;&lt;div&gt;public function loescheRaum() {}&lt;/div&gt;&lt;div&gt;public function bearbeiteRaum() {}&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="281.75" x="-1620" y="-660" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;class WohnungVerwalten {&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;div&gt;function _constructor() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $db&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $sql&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private $connection&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="281.75" x="-1621.75" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;class HausVerwalten {&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="280" x="-1618.25" y="-240" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=5;" value="&lt;div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;class RechnungenVerwalten {&lt;/div&gt;&lt;div style=&quot;font-weight: bold;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="260" x="-1320" y="-950" as="geometry" />
+        </mxCell>
+        <mxCell id="pBPdd_2UFlKbfgEzdM1W-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" value="AdminSeite" vertex="1">
+          <mxGeometry height="30" width="80" x="-1620" y="-1130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
